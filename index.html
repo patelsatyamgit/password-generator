@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1 id="heding">PASSWORD GENERATOR</h1>
+            <div id="password-container">
+                <input type="text" readonly id="password-field" placeholder="PASSWORD">
+                <div class="message">
+                    <p id="copymessage"></p>
+                    <img src="/copy.svg" alt="" width="32px" copy>
+                </div>
+                
+            </div>
+            <div class="input-fields">
+                <div class="legth-field">
+                    <h3>Password Length</h3>
+                    <div id="st-range"></div>
+                </div>
+                <input type="range" id="range-pipe" min="0" max="20" step="1">
+                <div id="cheack-box-container">
+                    <div>
+                        <input type="checkbox" name="uppercase" id="uppercase" class="mixpass">
+                        <label for="uppercase">Include Uppercase Letters</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="lowercase" id="lowercase" class="mixpass">
+                        <label for="lowercase">Include Lowercase Letters</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="numbers" id="numbers" class="mixpass">
+                        <label for="numbers">Include Numbers</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="symbols" id="symbols" class="mixpass">
+                        <label for="symbols">Include Symbols</label>
+                    </div>
+                </div>
+                <div class="strength-area">
+                    <h1>Strength</h1>
+                    <div id="st-strength"></div>
+                </div>
+                <button id="generate-btn">
+                    GENERATE PASSWORD
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/c565307c7f.js" crossorigin="anonymous"></script>
+</body>
+</html>

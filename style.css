@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(231deg, rgba(22, 6, 40, 1) 0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125, 1) 100%);
+}
+.container{
+    width: 550PX;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    text-align: center;
+}
+#heding{
+    color: white;
+    font-size: 43px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+#password-container{
+    background-color: rgb(21, 5, 40);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    max-height: 100px;
+    border-radius: 22PX;
+    -webkit-border-radius: 22PX;
+    -moz-border-radius: 22PX;
+    -ms-border-radius: 22PX;
+    -o-border-radius: 22PX;
+    border-bottom: 12px solid  rgb(91, 34, 134);
+}
+#password-field{
+    background-color: rgb(21, 5, 40);
+    border: none;
+    width: 80%;
+    height: 90%;
+    outline: none;
+    font-size: 33px;
+    color: rgb(171, 189, 30);
+    font-weight: 700;
+}
+#password-field::placeholder{
+    font-size: 33px;
+    color: rgb(171, 189, 30);
+    font-weight: 700;
+   
+}
+.message{
+    position: relative;
+}
+#copymessage{
+    background-color: rgb(171, 189, 30);
+    padding: 8px 18px;
+    font-size: 18px;
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+    position: absolute;
+    top: -45px;
+    right: -22px;
+    display: none;
+}
+/*-------------------------- input fields---------------------------   */
+.input-fields{
+    background-color: rgb(16, 3, 31);
+    padding: 33px 50px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    z-index: 22;
+}
+.legth-field{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.legth-field h3{
+    font-size: 33px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+.legth-field #st-range{
+    font-size: 33px;
+    color: yellow;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+/*----------------------------------- slider -------------------------- */
+
+#range-pipe{
+    position: relative;
+    appearance: none;
+    width: 100%;
+    height: 20px;
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+    cursor: pointer;
+    background: linear-gradient( rgb(173, 26, 173), rgb(226, 30, 200));
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    background-color: rgb(186, 120, 227);
+}
+#range-pipe:focus{
+    outline: 2px solid rgb(207, 207, 81);
+}
+#range-pipe::-webkit-slider-thumb{
+    appearance: none;
+    width: 44px;
+    height: 44px;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 11px 3px rgb(146, 146, 31);
+    z-index: 2;
+}
+#range-pipe::-webkit-slider-thumb:hover{
+    background-color: rgb(1, 1, 77);
+    border: 2px solid yellow;
+}
+
+/* ---------------------------- cheack box ---------------------------------- */
+
+
+#cheack-box-container{
+    color: white;
+    display: flex;
+    text-align: start;
+    gap: 22px;
+    flex-direction: column;
+}
+#cheack-box-container div label{
+    font-size: 1.45rem;
+    font-family: sans-serif;
+}
+
+#cheack-box-container div{
+    display: flex;
+    gap: 22px;
+}
+#cheack-box-container div input{
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 1px solid hsl(176, 100%, 44%);
+    cursor: pointer;
+    border-radius: 0.32rem;
+    -webkit-border-radius: 0.32rem;
+    -moz-border-radius: 0.32rem;
+    -ms-border-radius: 0.32rem;
+    -o-border-radius: 0.32rem;
+    position: relative;
+}
+#cheack-box-container div input:checked{
+    background-color: aqua;
+}
+
+#cheack-box-container div input:checked::before
+{
+    content: '✔';
+    color:black;
+    font-size: 28px;
+    position: absolute;
+    top: -12px;
+    transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    -o-transform: rotate(12deg);
+    right: -4px;
+}
+
+/* ------------------------------ stregth ----------------------------------- */
+
+
+.strength-area{
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.strength-area h1{
+    font-weight: 100;
+}
+.strength-area #st-strength{
+    width: 32px;
+    height: 32px;
+    background-color: rgb(248, 241, 241);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0 0 33px 1px  rgb(246, 242, 242);
+}
+
+
+/* ----------------------------generate button -------------------------- */
+
+#generate-btn{
+    background-color: rgb(175, 48, 164);
+    padding:25px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color:rgb(239, 239, 36);
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+    border-bottom: 9px solid rgb(239, 239, 36);
+}
